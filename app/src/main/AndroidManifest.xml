@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="fr.estei.ormexemple" >
+    <!-- The following line is required  android:name="com.orm.SugarApp"-->
+    <application
+        android:name="com.orm.SugarApp"
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <!-- Add The following line for Orm Support -->
+        <meta-data android:name="DATABASE" android:value="Ormdb_Exemple.db"></meta-data>
+        <meta-data android:name="VERSION" android:value="24"></meta-data>
+        <!-- add this line for debug Only  -->
+        <meta-data android:name="QUERY_LOG" android:value="1"></meta-data>
+        <meta-data android:name="DOMAIN_PACKAGE_NAME" android:value="fr.estei"></meta-data>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
